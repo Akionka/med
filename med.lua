@@ -1,7 +1,7 @@
 script_name('Med')
 script_author('akionka')
-script_version('1.1')
-script_version_number(2)
+script_version('1.2')
+script_version_number(3)
 script_description([[Используйте аптечку через /med!]])
 
 local sampev = require 'lib.samp.events'
@@ -87,7 +87,7 @@ function goupdate()
 		if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
 			sampAddChatMessage((u8:decode('[MED]: Новая версия установлена! Чтобы скрипт обновился нужно либо перезайти в игру, либо ...')), -1)
 			sampAddChatMessage((u8:decode('[MED]: ... если у вас есть автоперезагрузка скриптов, то новая версия уже готова и снизу вы увидите приветственное сообщение.')), -1)
-			sampAddChatMessage((u8:decode('[MED]: Если что-то пошло не так, то сообщите мне об этом в VK или Telegram > {2980b0}vk.com/akionka tele.run/akionka{FFFFFF}.')), -1)
+			sampAddChatMessage((u8:decode('[MED]: Если что-то пошло не так, то сообщите мне об этом в VK или Telegram > {2980b0}vk.com/akionka teleg.run/akionka{FFFFFF}.')), -1)
 		end
 	end)
 end
